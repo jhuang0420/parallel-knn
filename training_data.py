@@ -43,7 +43,7 @@ for i in range(0,rows):
     #progress bar
     if(part!=0 and i%part==0):
         sys.stdout.write('\r')
-        sys.stdout.write("[%-100s] %d%%" % ('='*(i/part), (i/part)))
+        sys.stdout.write("[%-100s] %d%%" % ('='*int(i/part), (i/part)))
         sys.stdout.flush()
     buff = bytes()
     for j in range(0,cols):
